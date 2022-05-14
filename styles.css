@@ -1,0 +1,45 @@
+
+/* Gets rid of bullet points, gives space between li's, and padding from the right */
+.links {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+    padding-right: 100px;
+}
+
+/* Gives needed space between the header title and the 3 info links */
+.ubToolBar {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* gives padding to main header logo */
+.header-logo {
+    padding: 20px;
+}
+
+/* Gets rid of ugly generic link style behavior*/
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.upperBlue {
+    background-color: rgb(42, 42, 97);
+}
+
+.panels {
+    display: flex;
+    justify-content: center;
+}
+
+.leftPan {
+    background-color: rgb(42, 42, 97);
+    width: 350px;
+}
+
+.rightPan {
+    display: flex;
+    background-color: rgb(90, 131, 221);
+    width: 350px;
+}
