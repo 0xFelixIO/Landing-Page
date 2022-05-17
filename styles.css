@@ -4,7 +4,7 @@
     display: flex;
     list-style-type: none;
     gap: 15px;
-    padding-right: 100px;
+    padding-right: 75px;
 }
 
 /* Gives needed space between the header title and the 3 info links */
@@ -15,7 +15,9 @@
 
 /* gives padding to main header logo */
 .header-logo {
-    padding: 20px;
+    font-weight: bold;
+    padding-left: 75px;
+    padding-top: 10px;
 }
 
 /* Gets rid of ugly generic link style behavior*/
@@ -28,18 +30,103 @@ a, a:hover, a:focus, a:active {
     background-color: rgb(42, 42, 97);
 }
 
-.panels {
+.panel-container {
     display: flex;
-    justify-content: center;
 }
 
-.leftPan {
-    background-color: rgb(42, 42, 97);
-    width: 350px;
+.panel {
+    flex: 1;
+    border: 2px solid red;
 }
 
-.rightPan {
+.panel.left {
+    margin-left: 75px;
+    flex: 1;
+}
+
+.panel.right {
+    margin-right: 75px;
+    flex: 1;
+}
+
+.panel.right img {
+    align-self: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.panel.left a:link, a:visited {
+    background-color: rgb(49, 95, 247);
+    padding: 12px 18px;
+    box-shadow: 2px 2px 7px 1px #5D8AA8;
+}
+
+.lpParagraph {
+    margin-bottom: 23px;
+}
+
+.whitesect {
+    border: 2px solid green;
+    background-color: rgb(17, 61, 83);
+}
+
+.whitesect .header {
+    padding-top: 20px;
+    text-align: center;
+    color: black;
+    font-size: 28px;
+}
+
+.gallery-container {
     display: flex;
-    background-color: rgb(90, 131, 221);
-    width: 350px;
+    justify-content: space-around;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.gal {
+    margin: 15px;
+}
+
+.gal p {
+    text-align: center;
+}
+
+.gal img {
+    border-radius: 12px;
+    border: 3px solid rgb(111, 54, 165);
+    align-self: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.graysect {
+    background-color: #5D8AA8;
+    border: 3px solid orange;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    padding: 15px;
+    padding-top: 50px;
+    padding-top: 50px;
+}
+
+.quote span {
+    margin-left: 350px;
+}
+
+.whitetwo {
+    border: 2px solid pink;
+    padding: 20px 50px 20px 50px;
+    background-color: white;
+}
+
+.bluebox {
+    background-color: rgb(6, 120, 185);
+    border-radius: 4px;
 }
